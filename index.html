@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waste Classification-app</title>
-</head>
-<body>
-    <h1>Waste Classifier</h1>
 
-    <form action="">
-        <input>
-    </form>
-    
-</body>
-</html>
+<title>Waste Classification-app</title>
+
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+        Label: {{ messages[0] }}
+        Accuracy: {{ messages[1] }}
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+	<p>
+		<input type="file" name="file" autocomplete="off" required>
+	</p>
+    </dl>
+    <p>
+	<input type="submit" value="Submit">
+    </p>
+</form>
