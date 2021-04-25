@@ -1,6 +1,6 @@
 # Waste Classification App
 
-![main](\templates\main.gif)
+![main](templates/main.gif)
 
 ## Requiremensts
 * Python 3.7+
