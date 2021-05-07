@@ -21,5 +21,7 @@ python app.py
 ```
 Open Browser and type http://localhost:5000 
 
+<a href="https://www.buymeacoffee.com/xyfer17"><img src="https://media.giphy.com/media/513lZvPf6khjIQFibF/giphy.gif"></a>
+
 
 
